@@ -7,7 +7,7 @@ Clone the repository and install requirements via:
 ```
 pip install -r requirements.txt
 ```
-Suggested usage with some of the python virtual environments.
+Suggested usage with some of python virtual environments.
 
 # Usage
 After navigating to repository path execute main.py as following:
