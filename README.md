@@ -12,7 +12,7 @@ Suggested usage with some of the python virtual environments.
 # Usage
 After navigating to repository path execute main.py as following:
 ```
-python main.py [-d DESTINATION] [cdp PATH] playlist_url
+python main.py [-d DESTINATION] [-cdp PATH] playlist_url
 ```
 Destination **-d** and ChromeDriver path **-cdp** are optional arguments.  
 If you don't provide **-d**, downloads will be placed in directory set by automated chrome.  
