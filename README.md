@@ -1,5 +1,6 @@
 # pmuse
-Downloads songs from youtubes playlist in mp3 format using headless chrome with selenium.
+Downloads songs from youtubes playlist in mp3 format using headless chrome with selenium.  
+The script uses online [converter](https://ytmp3.cc/en12/) to convert videos to mp3 and then repeat the process for all the videos in playlist.
 
 # Installation
 Clone the repository and install requirements via:
@@ -15,7 +16,7 @@ python main.py [-d DESTINATION] [cdp PATH] playlist_url
 ```
 Destination **-d** and ChromeDriver path **-cdp** are optional arguments.  
 If you don't provide **-d**, downloads will be placed in directory set by automated chrome.  
-If you don't want to provide **-cdp** every time you run the script you can put it directly into **_selenium_automation_script.py_** in **_initalize_driver_** function.  
+If you don't want to provide **-cdp** every time you run the script you can put it directly in **_selenium_automation_script.py_** in **_initalize_driver_** function.  
 
 
 
