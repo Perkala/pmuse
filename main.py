@@ -14,7 +14,7 @@ def main():
     args = parse_arguments()
     driver = sas.initialize_driver(args)
     urls = sas.get_playlist_urls(args)
-    sas.automate_function(driver, urls)
+    sas.automate(driver, urls)
 
 if __name__ == '__main__':
     main()

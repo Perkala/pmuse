@@ -26,11 +26,11 @@ def initialize_driver(args):
 def get_playlist_urls(args):
     return Playlist(args.playlist_url).parse_links()
 
-def automate_function(driver, urls):
+def automate(driver, urls):
     prefix = 'https://www.youtube.com/'
     driver.get('https://ytmp3.cc/en12/')
     for i in range(len(urls) + 1):
-        input_element = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, "input")))
+        input_element = WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.ID, "input")))
         input_element.send_keys(prefix + urls[i])
 
         start_conversion_button = driver.find_element_by_id("submit")
@@ -38,7 +38,7 @@ def automate_function(driver, urls):
 
         main_window_redirect = driver.window_handles[0]
 
-        download_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="buttons"]/a[1]')))
+        download_button = WebDriverWait(driver, 30).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="buttons"]/a[1]')))
         download_button.click()
 
         driver.switch_to_window(main_window_redirect)
