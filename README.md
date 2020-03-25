@@ -1,5 +1,5 @@
 # pmuse
-Downloads songs from youtubes playlist in mp3 format using headless chrome with selenium.  
+Python script that downloads songs from youtubes playlist in mp3 format using headless chrome with selenium.  
 The script uses online [converter](https://ytmp3.cc/en12/) to convert videos to mp3 and then repeats the process for all the videos in playlist.
 
 # Installation
