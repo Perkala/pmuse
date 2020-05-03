@@ -25,7 +25,7 @@ def get_playlist_urls(args):
 
 def automate(driver, urls):
     prefix = 'https://www.youtube.com/'
-    driver.get('https://ytmp3.cc/en12/')
+    driver.get('https://ytmp3.cc/en13/')
     for i in range(len(urls) + 1):
         input_element = WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.ID, "input")))
         input_element.send_keys(prefix + urls[i])
